@@ -1,0 +1,58 @@
+import { ActivityEvent } from "../types";
+
+export const initialActivities: ActivityEvent[] = [
+  {
+    id: "act-1",
+    entityType: "assignment",
+    entityId: "veh-1",
+    title: "Driver Assigned",
+    description: "Ahmed Khan (DR-0001) assigned to vehicle KOT-101 as Primary Captain.",
+    timestamp: "2026-01-01T08:00:00Z",
+    actor: "Operations Controller",
+  },
+  {
+    id: "act-2",
+    entityType: "driver",
+    entityId: "dr-9",
+    title: "Status Changed to On Leave",
+    description: "Shahid Ali status updated to On Leave until 01 Nov 2026 (Reason: Family Medical Leave).",
+    timestamp: "2026-10-01T09:00:00Z",
+    actor: "HR Administrator",
+  },
+  {
+    id: "act-3",
+    entityType: "driver",
+    entityId: "dr-11",
+    title: "Driver Suspended",
+    description: "Zeeshan Ahmed suspended for 30 days pending HSE inquiry. Assignment on KOT-109 ended.",
+    timestamp: "2026-09-28T14:15:00Z",
+    actor: "Safety Committee",
+  },
+  {
+    id: "act-4",
+    entityType: "vehicle",
+    entityId: "veh-9",
+    title: "Vehicle Sent to Workshop",
+    description: "KOT-109 status marked as Under Maintenance for scheduled brake and suspension overhaul.",
+    timestamp: "2026-09-29T10:00:00Z",
+    actor: "Workshop Superintendent",
+  },
+  {
+    id: "act-5",
+    entityType: "assignment",
+    entityId: "veh-2",
+    title: "Driver Changed",
+    description: "Muhammad Irfan replaced Kamran Akhtar on KOT-102 following resignation.",
+    timestamp: "2026-01-15T09:00:00Z",
+    actor: "Fleet Manager",
+  },
+  {
+    id: "act-6",
+    entityType: "vehicle",
+    entityId: "veh-5",
+    title: "Hose Pipe Test Passed",
+    description: "KOT-105 passed mandatory internal high-pressure hose pipe discharge test.",
+    timestamp: "2026-04-10T11:20:00Z",
+    actor: "Safety Inspector",
+  },
+];
